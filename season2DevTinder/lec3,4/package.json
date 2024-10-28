@@ -1,0 +1,16 @@
+{
+  "name": "season2devtinder",
+  "version": "1.0.0",
+  "description": "devTinder",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+
+  },
+  "author": "arpan singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

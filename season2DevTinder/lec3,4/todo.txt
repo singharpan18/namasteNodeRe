@@ -1,0 +1,29 @@
+lec3
+create a repository
+initialize the repository
+node modules, packages json, packages lock json
+install express
+create a server 
+listen to port no 7777
+write request handlers for /test, /hello
+install nodemon and update script inside packages json
+what are dependencies
+what is use og -g while installing nodemon
+difference between caret and tilde
+
+lec4
+initialize git
+.gitignore
+Create a remote repo on github
+Push all code to remote origin
+Play with routes and route extensions ex. /hello, / , hello/2, /xyz
+Order of the routes matter a lot
+Install Postman app and make a workspace/collectio > test API call
+Write logic to handle GET, POST, PATCH, DELETE API Calls and test them on Postman
+Explore routing and use of ?, + , (), * in the routes
+Use of regex in routes /a/ , /.*fly$/
+Reading the query params in the routes
+Reading the dynamic routes
+
+
+
