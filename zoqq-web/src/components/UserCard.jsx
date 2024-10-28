@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from '../../utilis/feedSlice';
 
 const UserCard = ({ user }) => {
-    const { firstName, lastName, photoUrl, age, gender, about } = user;
+    const {_id, firstName, lastName, photoUrl, age, gender, about } = user;
     const dispatch = useDispatch();
 
     const handleSendRequest = async (status, userId) => {
