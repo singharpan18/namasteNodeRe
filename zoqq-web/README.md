@@ -33,7 +33,15 @@ Show Toast Message on save of profile
 
 lec17
 See all my connections
-New Page - See all my Conenction REquests
+New Page - See all my Conenction Requests
+
+lec18
+Feature - Accept/Reject connection request
+Send/Ignore the user card from the feed
+
+lec19
+Signup New User
+E2E testing
 
 
 
