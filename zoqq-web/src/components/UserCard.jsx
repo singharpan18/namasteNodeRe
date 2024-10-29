@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from '../utilis/feedSlice';
 import axios from "axios";
 
-const UserCard = ({ user }) => {
+const UserCard = ({ user, button }) => {
     const {_id, firstName, lastName, photoUrl, age, gender, about } = user;
     const dispatch = useDispatch();
 
@@ -31,7 +31,8 @@ const UserCard = ({ user }) => {
             <h2 className="card-title">{firstName + " " + lastName}</h2>
             {age && gender && <p>{age + ", " + gender}</p>}
             <p>{about}</p>
-            <div className="card-actions justify-center my-4">
+            {button && (
+              <div className="card-actions justify-center my-4">
               <button
                 className="btn btn-primary"
                 onClick={() => handleSendRequest("ignored", _id)}
@@ -45,6 +46,7 @@ const UserCard = ({ user }) => {
                 Interested
               </button>
             </div>
+            )}
           </div>
         </div>
       );

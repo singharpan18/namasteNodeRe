@@ -16,6 +16,7 @@ const EditProfile = ({ user }) => {
     const [error, setError] = useState("");
     const dispatch = useDispatch();
     const [showToast, setShowToast] = useState(false);
+    const [showButton, setShowButton] = useState(false);
 
     const saveProfile = async () => {
         setError("");
@@ -128,6 +129,7 @@ const EditProfile = ({ user }) => {
                 </div>
                 <UserCard
                     user={{ firstName, lastName, photoUrl, age, gender, about }}
+                     button = {showButton}
                 />
             </div>
             {showToast && (

@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addFeed } from '../utilis/feedSlice'
 
 const Feed = () => {
-
+  const [showButton, setShowButton] = useState(true);
   const feed = useSelector((store) => store.feed);
   const dispatch = useDispatch();
 
@@ -33,7 +33,9 @@ const Feed = () => {
   return (
     feed && (
     <div className='flex justify-center my-10'>
-      <UserCard user={feed[0]}/>
+      <UserCard user={feed[0]}
+      button = {showButton}
+      />
     </div>
     )
   );
