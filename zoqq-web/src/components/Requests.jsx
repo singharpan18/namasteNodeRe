@@ -1,7 +1,7 @@
 import axios from "axios";
-import { BASE_URL } from "../../utilis/constants";
+import { BASE_URL } from "../utilis/constants";
 import { useDispatch, useSelector } from "react-redux";
-import { addRequests, removeRequest } from "../../utilis/requestSlice";
+import { addRequests, removeRequest } from "../utilis/requestSlice";
 import { useEffect, useState } from "react";
 
 const Requests = () => {
@@ -29,7 +29,9 @@ const Requests = () => {
       });
 
       dispatch(addRequests(res.data.data));
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { BASE_URL } from '../../utilis/constants'
-import { addUser } from "../../utilis/createSlice";
+import { BASE_URL } from '../utilis/constants'
+import { addUser } from "../utilis/userSlice";
 import { useDispatch } from 'react-redux';
 import UserCard from "./UserCard";
 import axios from "axios";

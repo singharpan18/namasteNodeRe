@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import UserCard from './UserCard'
 import axios from 'axios'
-import { BASE_URL } from '../../utilis/constants'
+import { BASE_URL } from '../utilis/constants'
 import { useDispatch, useSelector } from 'react-redux'
-import { addFeed } from '../../utilis/feedSlice'
+import { addFeed } from '../utilis/feedSlice'
 
 const Feed = () => {
 

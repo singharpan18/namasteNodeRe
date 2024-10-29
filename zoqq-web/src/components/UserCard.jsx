@@ -1,7 +1,8 @@
 import React from 'react';
-import { BASE_URL } from '../../utilis/constants';
+import { BASE_URL } from '../utilis/constants';
 import { useDispatch } from "react-redux";
-import { removeUserFromFeed } from '../../utilis/feedSlice';
+import { removeUserFromFeed } from '../utilis/feedSlice';
+import axios from "axios";
 
 const UserCard = ({ user }) => {
     const {_id, firstName, lastName, photoUrl, age, gender, about } = user;
@@ -15,7 +16,9 @@ const UserCard = ({ user }) => {
                 { withCredentials: true }
               );
               dispatch(removeUserFromFeed(userId));
-            } catch (err) {}
+            } catch (err) {
+              console.log(err)
+            }
     };
         
 

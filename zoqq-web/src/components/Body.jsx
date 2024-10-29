@@ -2,9 +2,9 @@ import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import { useEffect } from 'react';
-import { addUser } from '../../utilis/createSlice';
+import { addUser } from '../utilis/userSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { BASE_URL } from '../../utilis/constants';
+import { BASE_URL } from '../utilis/constants';
 import axios from 'axios';
 import NavBar from './NavBar';
 

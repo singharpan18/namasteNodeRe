@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import { BASE_URL } from '../../utilis/constants';
+import { BASE_URL } from '../utilis/constants';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { addUser } from '../../utilis/createSlice';
+import { addUser } from '../utilis/userSlice';
 
 const Login = () => {
 
@@ -28,6 +28,7 @@ const Login = () => {
         },
         { withCredentials: true }
       );
+      console.log(res.data);
       dispatch(addUser(res.data));
       return navigate("/")
     } catch (err) {
